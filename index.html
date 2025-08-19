@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="Lgo.jpg" type="image/x-icon">
+    <title>Iqan Sarwar Taqi</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        /* Top Bar */
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #222;
+            color: #fff;
+            padding: 0 40px;
+            height: 60px;
+        }
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1em;
+            transition: color 0.2s;
+        }
+        .nav-links a:hover {
+            color: #00bfff;
+        }
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .main-content img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+        .main-content h1 {
+            margin: 0 0 15px 0;
+            font-size: 2.2em;
+        }
+        .main-content p {
+            font-size: 1.1em;
+            margin-bottom: 25px;
+            color: #444;
+        }
+        .portfolio-btn {
+            background: #00bfff;
+            color: #fff;
+            border: none;
+            padding: 12px 32px;
+            font-size: 1.1em;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .portfolio-btn:hover {
+            background: #009acd;
+        }
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 15px 0;
+            background: #222;
+            color: #fff;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+        /* Background Text */
+        .background-big-text {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6em; /* Smaller so it fits on screen */
+            color: rgba(34, 34, 34, 0.10); /* 10% visible, dark for contrast */
+            white-space: nowrap;
+            pointer-events: none;
+            font-weight: 900;
+            letter-spacing: 0.05em;
+            user-select: none;
+            z-index: 0;
+            max-width: 90vw;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-big-text">Let's GO with the spirit of Art</div>
+    <div class="top-bar">
+        <div class="logo">
+            <img src="Lgo.jpg" alt="Logo" style="height:60px; border-radius:100%;">
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </div>
+    <div class="main-content">
+        <img src="taqi.jpg" alt="Iqan Sarwar Taqi">
+        <h1>I'm Iqan Sarwar Taqi</h1>
+        <h2>Welcome to My Portfolio</h2>
+        <p>
+            Hi! I'm a passionate graphic designer, photo editor, video editor, 3d artist and developer ready to bring your ideas to life.<br>
+            Explore my work and let's connect!
+        </p>
+        <button class="portfolio-btn" onclick="window.location.href='https://www.youtube.com/@thelittleartisttaqi2013'">View Portfolio</button>
+    </div>
+    <div class="footer">
+        &copy; 2025 | Iqan Sarwar Taqi | All rights reserved.
+    </div>
+</body>
+</html>

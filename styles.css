@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+/* Top Bar */
+.top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #222;
+    color: #fff;
+    padding: 0 40px;
+    height: 60px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    opacity: 0;
+    animation: fadeInTop 1s 0.2s forwards;
+}
+
+@keyframes fadeInTop {
+    from { opacity: 0; transform: translateY(-30px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #00bfff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    opacity: 0;
+    animation: fadeIn 1.2s 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.main-content img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    opacity: 0;
+    animation: fadeInImg 1.2s 1s forwards;
+}
+
+@keyframes fadeInImg {
+    from { opacity: 0; transform: scale(0.9);}
+    to { opacity: 1; transform: scale(1);}
+}
+
+.main-content h1 {
+    margin: 0 0 15px 0;
+    font-size: 2.2em;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+.main-content p {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.portfolio-btn {
+    background: linear-gradient(90deg, #00bfff 0%, #009acd 100%);
+    color: #fff;
+    border: none;
+    padding: 12px 32px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 8px rgba(0,191,255,0.08);
+    opacity: 0;
+    animation: fadeInBtn 1s 1.5s forwards;
+}
+
+@keyframes fadeInBtn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.portfolio-btn:hover {
+    background: linear-gradient(90deg, #009acd 0%, #00bfff 100%);
+    box-shadow: 0 4px 16px rgba(0,191,255,0.18);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #222;
+    color: #fff;
+    font-size: 1em;
+    letter-spacing: 1px;
+    opacity: 0;
+    animation: fadeInFooter 1s 2s forwards;
+}
+
+@keyframes fadeInFooter {
+    from { opacity: 0;}
+    to { opacity: 1;}
+}
+
+.background-big-text {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13vw;
+    font-weight: 900;
+    color: rgba(34,34,34,0.04);
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+    text-transform: uppercase;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    width: 100vw;
+    text-align: center;
+    opacity: 0;
+    animation: fadeInBigText 1.5s 0.5s forwards;
+}
+
+@keyframes fadeInBigText {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
